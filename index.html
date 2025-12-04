@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Endless Runner</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smooth Runner — Soft Cartoon</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <canvas id="gameCanvas"></canvas>
 
-    <canvas id="gameCanvas"></canvas>
+  <div id="overlay" class="show">
+    <div id="title">Smooth Runner</div>
+    <div id="subtitle">Tap / Space to jump — avoid obstacles, collect power-ups</div>
+    <button id="startBtn" class="big-btn">Start Game</button>
+    <div id="controls">Controls: Space / Up Arrow / Touch</div>
+    <div id="credits">No sound • Mobile-ready</div>
+  </div>
 
-    <div id="ui">
-        <div id="score">Score: 0</div>
-        <div id="highScore">High Score: 0</div>
-        <button id="startBtn">Start Game</button>
-    </div>
+  <div id="hud">
+    <div id="score">Score: 0</div>
+    <div id="highScore">High Score: 0</div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
